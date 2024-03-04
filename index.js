@@ -8,7 +8,6 @@ buttons.forEach((button) => {
 })
 function calculer (btnValue) {
     if (btnValue === "=" && output !== "") {
-        //If output has '%', replace with '/100' before evaluating.
         output = eval(output.replace('%', '/100'));
       }else if(btnValue === "AC") {
         output = ""
@@ -17,8 +16,7 @@ function calculer (btnValue) {
       }
       
       else { 
-        //If output is empty and button is specialChars then return
-        if (output === "" && specialChars.includes(btnValue)) return;
+        if (output === "" && specialChars.includes(btnValue)) return
         output += btnValue;
              }
     input.value = output;
