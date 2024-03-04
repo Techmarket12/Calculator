@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hedvig Letters Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(230, 230, 235);
+    box-shadow: rgb(0, 0, 0, .2);
+}
+.container {
+    max-width: 300px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    padding: 30px 20px;
+    /* height: 400px; */
+
+}
+input {
+    width: 100%;
+    border: none;
+    padding: 30px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+input:focus {
+    outline: none;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+button {
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+}
